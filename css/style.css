@@ -9,7 +9,7 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 1.7;
-  padding: 30px;
+  padding: 20px;
   font-family: 'Indie Flower', cursive;
 }
 
@@ -248,6 +248,9 @@ body {
   body {
     font-size: 13px;
     padding: 0 !important;
+  }
+  .header {
+    height: 100vh;
   }
   .social-media {
     font-size: 2rem;
