@@ -47,7 +47,9 @@ body{
     letter-spacing: 6px;
     text-align: center;
     animation-name: moveInBottom;
+    animation-delay: .4s;
     animation-duration: 1.2s;
+    animation-fill-mode: backwards;
 }
 .desc{
     text-align: center;
@@ -58,7 +60,7 @@ body{
     
     animation-name: moveInBottom;
     animation-duration: 1.2s;
-    animation-delay:.3s;
+    animation-delay:.7s;
     animation-fill-mode: backwards;
 
 }
@@ -145,7 +147,7 @@ body{
     margin-top: 30px;
     animation: moveInBottom;
     animation-duration: 1s;
-    animation-delay: 1s;
+    animation-delay: 1.3s;
     animation-fill-mode: backwards;
 }
 
@@ -171,7 +173,7 @@ body{
     font-size: 3rem;
     animation-name: moveInBottom;
     animation-duration: 1.2s;
-    animation-delay:.7s;
+    animation-delay:1s;
     animation-fill-mode: backwards;
 
 }
@@ -251,6 +253,6 @@ hr
     
     animation-name: moveInBottom;
     animation-duration: 1.2s;
-    animation-delay:.4s;
+    animation-delay:.9s;
     animation-fill-mode: backwards;
 }

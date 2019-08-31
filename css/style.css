@@ -51,8 +51,12 @@ body {
   text-align: center;
   -webkit-animation-name: moveInBottom;
           animation-name: moveInBottom;
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
   -webkit-animation-duration: 1.2s;
           animation-duration: 1.2s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
 .desc {
@@ -65,8 +69,8 @@ body {
           animation-name: moveInBottom;
   -webkit-animation-duration: 1.2s;
           animation-duration: 1.2s;
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
+  -webkit-animation-delay: .7s;
+          animation-delay: .7s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
@@ -233,8 +237,8 @@ body {
           animation: moveInBottom;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
@@ -271,8 +275,8 @@ body {
           animation-name: moveInBottom;
   -webkit-animation-duration: 1.2s;
           animation-duration: 1.2s;
-  -webkit-animation-delay: .7s;
-          animation-delay: .7s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
@@ -350,8 +354,8 @@ hr {
           animation-name: moveInBottom;
   -webkit-animation-duration: 1.2s;
           animation-duration: 1.2s;
-  -webkit-animation-delay: .4s;
-          animation-delay: .4s;
+  -webkit-animation-delay: .9s;
+          animation-delay: .9s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
