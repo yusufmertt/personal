@@ -14,8 +14,8 @@ body {
 }
 
 .header {
-  background: -webkit-gradient(linear, left bottom, right top, from(#25003de0), to(#1e004ebb)), url("../pic/bg.gif");
-  background: linear-gradient(to right top, #25003de0, #1e004ebb), url("../pic/bg.gif");
+  background: -webkit-gradient(linear, left bottom, right top, from(#180029e0), to(#17003bbb)), url("../pic/bg.gif");
+  background: linear-gradient(to right top, #180029e0, #17003bbb), url("../pic/bg.gif");
   background-repeat: repeat;
   background-position: top;
   background-size: auto;
@@ -240,16 +240,14 @@ body {
 }
 
 .btn:hover {
-  -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
   background-color: #8400ff;
 }
 
 .btn:active {
-  -webkit-transform: translateY(-1px);
-          transform: translateY(-1px);
+  -webkit-transform: translateY(-0.5px);
+          transform: translateY(-0.5px);
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
 }
@@ -305,7 +303,9 @@ body {
 }
 
 .fa-instagram:hover {
-  color: #c203b2;
+  background: -webkit-linear-gradient(#ea00ff, #ff0080);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media only screen and (max-width: 800px) {
