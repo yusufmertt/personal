@@ -19,7 +19,6 @@ body {
   background-repeat: repeat;
   background-position: top;
   background-size: auto;
-  height: 90vh;
   position: relative;
   min-height: 100vh;
 }
@@ -50,8 +49,8 @@ body {
   margin-bottom: 0px;
   letter-spacing: 6px;
   text-align: center;
-  -webkit-animation-name: moveInLeft;
-          animation-name: moveInLeft;
+  -webkit-animation-name: moveInBottom;
+          animation-name: moveInBottom;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
 }
@@ -62,10 +61,14 @@ body {
   font-weight: 100;
   display: block;
   letter-spacing: 4px;
-  -webkit-animation-name: moveInRight;
-          animation-name: moveInRight;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-name: moveInBottom;
+          animation-name: moveInBottom;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
 @-webkit-keyframes moveInLeft {
@@ -166,8 +169,54 @@ body {
   }
 }
 
+@-webkit-keyframes moveInTop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(-50px);
+            transform: translate(-50px);
+  }
+}
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(-50px);
+            transform: translate(-50px);
+  }
+}
+
+@-webkit-keyframes fade {
+  0% {
+    background: rgba(0, 0, 0, 0.74);
+  }
+  100% {
+    background: rgba(0, 0, 0, 0.116);
+  }
+}
+
+@keyframes fade {
+  0% {
+    background: rgba(0, 0, 0, 0.74);
+  }
+  100% {
+    background: rgba(0, 0, 0, 0.116);
+  }
+}
+
+.btn,
 .btn:link,
 .btn:visited {
+  display: none;
   color: white;
   text-transform: uppercase;
   text-decoration: none;
@@ -180,6 +229,14 @@ body {
   position: relative;
   background-color: rgba(236, 236, 236, 0);
   margin-top: 30px;
+  -webkit-animation: moveInBottom;
+          animation: moveInBottom;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
 .btn:hover {
@@ -216,6 +273,10 @@ body {
           animation-name: moveInBottom;
   -webkit-animation-duration: 1.2s;
           animation-duration: 1.2s;
+  -webkit-animation-delay: .7s;
+          animation-delay: .7s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
 .media-logo {
@@ -287,5 +348,13 @@ hr {
   display: block;
   width: 100px;
   position: relative;
+  -webkit-animation-name: moveInBottom;
+          animation-name: moveInBottom;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 /*# sourceMappingURL=style.css.map */

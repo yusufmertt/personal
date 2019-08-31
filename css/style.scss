@@ -17,9 +17,9 @@ body{
     background-repeat: repeat;
     background-position: top;
     background-size: auto;
-    height : 90vh;
     position: relative;    
     min-height: 100vh;
+    
 }
 /*
 .logo-box{
@@ -39,13 +39,14 @@ body{
     color: white;
 }
 .name{
+    
     font-weight: 500;
     font-size: 4rem;
     display: block;
     margin-bottom: 0px;
     letter-spacing: 6px;
     text-align: center;
-    animation-name: moveInLeft;
+    animation-name: moveInBottom;
     animation-duration: 1s;
 }
 .desc{
@@ -54,8 +55,11 @@ body{
     font-weight: 100;
     display: block;
     letter-spacing: 4px;
-    animation-name: moveInRight;
-    animation-duration: 1s;
+    
+    animation-name: moveInBottom;
+    animation-duration: 1.2s;
+    animation-delay:.3s;
+    animation-fill-mode: backwards;
 
 }
 @keyframes moveInLeft{
@@ -101,8 +105,33 @@ body{
     }
     
 }
+
+
+@keyframes moveInTop{
+    0%{
+        opacity: 0;
+        transform: translateY(0px);
+    }
+    100%{
+        opacity: 1;
+        transform :translate(-50px);
+    }
+    
+}
+
+@keyframes fade{
+    0%{
+        background:rgba(0, 0, 0, 0.74);
+    }
+    100%{
+        background:rgba(0, 0, 0, 0.116);
+    }
+    
+}
+.btn,
 .btn:link,
 .btn:visited{
+    display: none;
     color: white;
     text-transform: uppercase;
     text-decoration: none;
@@ -114,7 +143,10 @@ body{
     position: relative;
     background-color: rgba(236, 236, 236, 0);
     margin-top: 30px;
-
+    animation: moveInBottom;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
 }
 
 .btn:hover{
@@ -140,6 +172,8 @@ body{
     font-size: 3rem;
     animation-name: moveInBottom;
     animation-duration: 1.2s;
+    animation-delay:.7s;
+    animation-fill-mode: backwards;
 
 }
 .media-logo{
@@ -215,4 +249,9 @@ hr
     display: block;
     width: 100px;
     position: relative;
+    
+    animation-name: moveInBottom;
+    animation-duration: 1.2s;
+    animation-delay:.4s;
+    animation-fill-mode: backwards;
 }
