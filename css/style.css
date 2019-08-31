@@ -285,8 +285,6 @@ body {
 
 .fa {
   font-size: 90% !important;
-  -webkit-transition: all .3s;
-  transition: all .3s;
   color: #d8d8d8;
 }
 
